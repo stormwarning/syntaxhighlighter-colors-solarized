@@ -1,0 +1,181 @@
+/**
+ * The values
+ */
+$base03:    #002b36;
+$base02:    #073642;
+$base01:    #586e75;
+$base00:    #657b83;
+$base0:     #839496;
+$base1:     #93a1a1;
+$base2:     #eee8d5;
+$base3:     #fdf6e3;
+$yellow:    #b58900;
+$orange:    #cb4b16;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4;
+$blue:      #268bd2;
+$cyan:      #2aa198;
+$green:     #859900;
+
+
+/**
+ * Syntax types
+ */
+.plain {
+  color: $base00 !important;
+}
+
+.comment {
+  color: $base1 !important;
+  font-style: italic !important;
+}
+
+.string {
+  color: $cyan !important;
+} 
+
+.keyword {
+  color: $green !important;
+  font-weight: bold !important;
+}
+
+.processor {
+  color: $base1 !important;
+  font-style: italic !important;
+  font-weight: normal !important;
+}
+
+.variable {
+  color: $blue !important;
+}
+
+.value {
+  color: $cyan !important;
+}
+
+.function {
+  color: $base01 !important;
+}
+
+.constant {
+  color: $blue !important;
+}
+
+.script {
+  color: $magenta !important;
+}
+
+.color1 {
+  color: $violet !important;
+}
+
+.color2 {
+  color: $orange !important;
+}
+
+.color3 {
+  color: $red !important;
+}
+
+
+/**
+ * Let's do this thing
+ */
+
+.syntaxhighlighter {
+  background-color: $base3 !important;
+}
+.syntaxhighlighter .line.alt1 {
+  background-color: $base3 !important;
+}
+.syntaxhighlighter .line.alt2 {
+  background-color: $base3 !important;
+}
+.syntaxhighlighter .line.highlighted.alt1, .syntaxhighlighter .line.highlighted.alt2 {
+  background-color: $base2 !important;
+}
+.syntaxhighlighter .line.highlighted.number {
+  color: black !important;
+}
+.syntaxhighlighter table caption {
+  color: black !important;
+}
+.syntaxhighlighter .gutter {
+  color: #afafaf !important;
+}
+.syntaxhighlighter .gutter .line {
+  border-right: 3px solid #6ce26c !important;
+}
+.syntaxhighlighter .gutter .line.highlighted {
+  background-color: #6ce26c !important;
+  color: white !important;
+}
+.syntaxhighlighter.printing .line .content {
+  border: none !important;
+}
+.syntaxhighlighter.collapsed {
+  overflow: visible !important;
+}
+.syntaxhighlighter.collapsed .toolbar {
+  color: blue !important;
+  background: white !important;
+  border: 1px solid #6ce26c !important;
+}
+.syntaxhighlighter.collapsed .toolbar a {
+  color: blue !important;
+}
+.syntaxhighlighter.collapsed .toolbar a:hover {
+  color: red !important;
+}
+.syntaxhighlighter .toolbar {
+  color: white !important;
+  background: #6ce26c !important;
+  border: none !important;
+}
+.syntaxhighlighter .toolbar a {
+  color: white !important;
+}
+.syntaxhighlighter .toolbar a:hover {
+  color: black !important;
+}
+ 
+.syntaxhighlighter .plain, .syntaxhighlighter .plain a {
+  @extend .plain;
+}
+.syntaxhighlighter .comments, .syntaxhighlighter .comments a {
+  @extend .comment;
+}
+.syntaxhighlighter .string, .syntaxhighlighter .string a {
+  @extend .string;
+}
+.syntaxhighlighter .keyword {
+  @extend .keyword;
+}
+.syntaxhighlighter .preprocessor {
+  @extend .processor;
+}
+.syntaxhighlighter .variable {
+  @extend .variable;
+}
+.syntaxhighlighter .value {
+  @extend .value;
+}
+.syntaxhighlighter .functions {
+  @extend .function;
+}
+.syntaxhighlighter .constants {
+  @extend .constant;
+}
+.syntaxhighlighter .script {
+  @extend .script;
+}
+.syntaxhighlighter .color1, .syntaxhighlighter .color1 a {
+  @extend .color1;
+}
+.syntaxhighlighter .color2, .syntaxhighlighter .color2 a {
+  @extend .color2;
+}
+.syntaxhighlighter .color3, .syntaxhighlighter .color3 a {
+  @extend .color3;
+}
